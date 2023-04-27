@@ -1,0 +1,205 @@
+*{
+    font-family:sans-serif;
+    /* font-weight: bold; */
+}
+body{
+    /* width: 100%; */
+    /* margin: auto;
+    text-align: center; */
+}
+
+/* Home --------------------------------------*/
+#h-h1,#f-h1{
+    color: seagreen;
+    text-align: center;
+}
+#home-page-body{
+    /* width: 98%; */
+    /* margin: auto; */
+    text-align: center;
+}
+.expense-table{
+    /* width: 100%; */
+    border: 1px solid grey;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+}
+.expense-table th{
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+.expense-table td{
+    padding: 5px;
+}
+.odd-row{
+    background-color: lightgrey;
+}
+.even-row{
+    background-color: rgba(211, 211, 211, 0.2);
+}
+.h-update{
+    background-color: seagreen;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    /* margin-right: 5px; */
+}
+.h-update:hover{
+    background-color: rgba(0, 128, 0, 0.5);
+}
+.h-delete{
+    background-color:crimson;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    margin-left: 5px;
+}
+.h-delete:hover{
+    background-color: rgba(220, 20, 60, 0.5);
+}
+#home-div{
+    margin:20px;
+}
+#h-add-expense-btn,#f-btn{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 300px;
+}
+#h-add-expense-btn:hover{
+    background-color: seagreen;
+}
+#h-filter-result-btn:hover{
+    background-color: lightgrey;
+}
+#h-filter-result-btn{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+}
+#graph-btn{
+    width: 45%;
+    padding: 5px;
+    background-color: rgba(0, 128, 0, 0.5);
+    border-radius: 5px;
+    border: 1px solid black;
+    /* font-size: large; */
+    font-weight: bold;
+}
+#graph-btn:hover{
+    background-color: rgba(0, 128, 0, 0.3);
+}
+
+/* -----------------------------------add new expense ------------------------*/
+#add-expense-body,#update-expense{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+#date{
+    background-color: lightgrey;
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+#new-expense-table{
+    /* border: 1px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+}
+#new-expense-table td{
+    /* border: 1px solid black; */
+    padding: 5px;
+    margin: 5px;
+}
+#new-expense-table td:nth-child(2n+1){
+    width: 20%;
+}
+#new-expense-table input{
+    width: 100%;
+    padding: 8px;
+}
+#new-expense-table td:last-child{
+    text-align: center;
+}
+#add-expense-btn{
+    color: white;
+    background-color: black;
+    padding: 5px;
+    width: 100px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#add-expense-btn:hover{
+    color:white;
+    background-color:seagreen;
+}
+#go-back{
+    color: seagreen;
+    background-color: transparent;
+    padding: 5px;
+    width: 300px;
+    margin: 10px;
+    border: 1px solid seagreen;
+    border-radius: 5px;
+}
+#go-back:hover{
+    background-color: lightgrey;
+}
+
+/* -----------------------------------filter expense ------------------------*/
+#filter-body{
+    text-align: center;
+}
+#filter-table{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+#filter-table td{
+    padding: 10px;
+}
+#f-btn{
+    border: 2px solid gray;
+    margin:10px;
+}
+#types-option{
+    width: 100%;
+    padding: 5px;
+}
+#min,#max{
+    /* margin: 5px; */
+    padding: 5px;
+    width: 25%;
+}
+#upper-form{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+/* -----------------------------------graph summary ------------------------*/
+#graph-page{
+    text-align: center;
+}
+.g-select{
+    width: 20%;
+    padding: 5px;
+    margin: 5px;
+}
+#myChart{
+    margin: auto;
+    max-width:700px;
+    /* border: 1px solid black; */
+}

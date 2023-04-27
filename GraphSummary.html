@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Graph Summary</title>
+</head>
+<body id="graph-page" onload="loadOptions()">
+    <h1>Graph Based Summary</h1>
+    <h3>Select Time Period</h3>
+    <select id="select-month" class="g-select" onchange="e()">
+        <option value="Select Month" >Select Month</option>
+        <option value="1" id="1">January</option>
+        <option value="2" id="2">February</option>
+        <option value="3" id="3">March</option>
+        <option value="4" id="4">April</option>
+        <option value="5" id="5">May</option>
+        <option value="6" id="6">June</option>
+        <option value="7" id="7">July</option>
+        <option value="8" id="8">August</option>
+        <option value="9" id="9">September</option>
+        <option value="10" id="10">October</option>
+        <option value="11" id="11">November</option>
+        <option value="12" id="12">December</option>
+    </select>
+    <select id="select-year" class="g-select" onchange="e()">
+        <option value="Select Year">Select Year</option>
+        <!-- options add on runtime -->
+        <!-- <option value="2022" class="year">2022</option>
+        <option value="2021" class="year">2021</option>             
+        <option value="2020" class="year">2020</option>             
+        <option value="2019" class="year">2019</option>             
+        <option value="2018" class="year">2018</option>             
+        <option value="2017" class="year">2017</option>             
+        <option value="2016" class="year">2016</option> 
+        <option value="2015" class="year">2015</option>              -->
+    </select>
+
+    <!-- <div>
+        <button onclick="e()" id="go-back">Generate Graph</button>
+    </div> -->
+    <!-- add a <canvas> to where you want to draw the chart: -->
+        <div id="chart-div">
+            <canvas id="myChart"></canvas>
+        </div>
+
+   <div>
+    <button id="go-back" onclick="window.location.href='HomePage.html'">Go Back to Home</button>
+   </div>
+
+   <!-- chart library -->
+   <script src  = 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js'></script>
+    <script src="script1.js"></script>
+
+</body>
+</html>

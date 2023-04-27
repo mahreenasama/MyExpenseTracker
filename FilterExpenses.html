@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Filter Expenses</title>
+</head>
+<body id="filter-body" onload="getExpenseTypes()">
+    <h1 id="f-h1"><u>Filter Expenses</u></h1>
+
+    <form id="upper-form">
+        <h2 id="filter-type">Type</h2>
+        <!-- <div id="types-option-div"> -->
+            <select id="types-option">
+                <!-- add options through js -->
+            </select>
+        <!-- </div> -->
+        <h2 id="filter-range">Range</h2>
+        <!-- <div> -->
+            <input type="number" placeholder="Min-Value" id="min" min="0">
+            <input type="number" placeholder="Max-Value" id="max" min="0">
+        <!-- </div> -->
+        
+    </form>
+    <!------------------------------------------------------------- table -->
+    <div>
+        <button type="submit" id="f-btn" onclick="showFilteredExpenses()">Show Filtered Results</button>
+    </div>
+    <table class="expense-table" id="filter-table">
+        <tr>
+            <th id="f-sr">Sr.</th>
+            <th id="f-summ">Expense Summary.</th>
+            <th id="f-desc">Description.</th>
+            <th id="f-price">Price</th>
+            <th id="f-type">Type</th>
+            <th id="f-date">Date</th>
+        </tr>
+    </table>
+    <div>
+        <button id="go-back" onclick="window.location.href='index.html'">Go Back to Home</button>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

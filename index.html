@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Home</title>
+</head>
+<body onload="readExpenses()" id="home-page-body">
+    <h1 id="h-h1"><u>My Expense Tracker App</u></h1>
+    <table class="expense-table" id="home-table">
+        <tr>
+            <th id="h-sr">Sr.</th>
+            <th id="h-summ">Expense Summary.</th>
+            <th id="h-desc">Description.</th>
+            <th id="h-price">Price</th>
+            <th id="h-type">Type</th>
+            <th id="h-date">Date</th>
+            <th id="h-options">Options</th>
+        </tr>
+    </table>
+    <div id="home-div">
+            <button id="h-add-expense-btn" onclick="window.location.href='AddNewExpense.html'">Add New Expense</button>
+            <button id="h-filter-result-btn" onclick="window.location.href='FilterExpenses.html'">Filter Result</button>
+    </div>
+
+    <div id="h-graph-btn">
+        <button id="graph-btn" onclick="window.location.href='GraphSummary.html'">Generate Graph Based Summary</button>
+    </div>
+     <!-- script -->
+    <script src="script1.js"></script>
+</body>
+</html>
