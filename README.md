@@ -2,7 +2,7 @@
 * A simple web application to keep record of daily expenses. 
 * Developed using HTML, CSS, JavaScript, and SQLite
 
-Deployed at: https://mahreen-asama.github.io/MyExpenseTracker/
+Deployed at: https://mahreenasama.github.io/MyExpenseTracker/
 
 ## Add New Expense
 ![add new](https://user-images.githubusercontent.com/79749919/234860165-6b3ee946-09f8-4712-9e03-f447623179ee.PNG)
